@@ -1,8 +1,8 @@
 body {
-    background: rgb(220, 6, 6);
-    color: rgb(18, 199, 39);
-    padding: 10px;
-    font-family: Play 'Times New Romen Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(2, 137, 16);
+    color: rgb(168, 3, 162);
+    padding: 100px;
+    font-family: serif;
 }
 #all-contents {
   max-width: 800px;
@@ -10,34 +10,34 @@ body {
 }
 
 /* navigation menu */
-nav 
-    background: rgb(93, 66, 38);
+nav {
+    background: rgb(2, 186, 11);
    margin: 0 auto;
     display: flex;
-    padding: 10px;
+    padding: 13px;
 }
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(224, 30, 172);
-    flex: 1;
-    margin: 0;
+    color: rgb(3, 12, 138);
+    flex: 7;
+    margin: 3;
 }
 #nav-ul {
     list-style-image: none;
 }
 .nav-li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 12px;
 }
 a {
     text-decoration: none;
-    color: #11099f;
+    color: #9404a7;
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(143, 102, 40);
+    background: rgb(3, 154, 31);
     display: flex;
 }
 .sidebar {
@@ -54,9 +54,83 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(216, 7, 115) ridge;
-    padding: 9px;
+    border: 8px rgb(2, 12, 120) ridge;
+    padding: 17px;
 }
 h2, h3 {
-    margin: 0px;
+    margin: 7px;
 }
+/* portfolio styles */
+.content h1 {
+    color: rgb(4, 9, 143);
+}
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 4;
+}
+
+#portfolio li {
+    background: #2600a3;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #04065f;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #1ec30c;
+}
+         /* responsive web design */
+         @media screen and (min-width: 120px) and (max-width: 1080px) {
+            main {
+              height: 100ch;
+              zoom: 1.5;
+              display: grid;
+            }
+
+            h1 {
+              font-size: 44px;
+            }
+
+            h2 {
+              font-size: 42px;
+            }
+
+            h3 {
+              font-size: 36px;
+            }
+
+            #all-contents {
+              height: 100ch;
+              margin: none;
+            }
+
+            a {
+              font-size: 42px;
+            }
+
+            .sidebar {
+              margin-right: 0px;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .sidebar-img {
+              width: 100%;
+            }
+
+            p,
+            li {
+              font-size: 24px;
+            }
+
+            .content {
+              align-content: center;
+              justify-content: center;
+            }
+        }
